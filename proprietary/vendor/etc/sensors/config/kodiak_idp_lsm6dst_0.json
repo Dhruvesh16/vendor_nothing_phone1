@@ -1,7 +1,7 @@
 {
   "config":{
     "hw_platform": ["MTP","IDP"],
-    "soc_id": ["475", "497", "498"]
+    "soc_id": ["475", "497", "498", "575", "576"]
   },
   "lsm6dst_0_platform":{
     "owner": "lsm6dst",
