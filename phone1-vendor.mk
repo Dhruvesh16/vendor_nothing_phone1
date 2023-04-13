@@ -227,6 +227,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/nothing/phone1/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/nothing/phone1/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
+    vendor/nothing/phone1/proprietary/vendor/bin/hw/vendor.qti.hardware.limits@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.limits@1.0-service \
     vendor/nothing/phone1/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@2.2-service \
     vendor/nothing/phone1/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
     vendor/nothing/phone1/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
@@ -399,6 +400,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/nothing/phone1/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
     vendor/nothing/phone1/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
+    vendor/nothing/phone1/proprietary/vendor/etc/init/vendor.qti.hardware.limits@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.limits@1.0-service.rc \
     vendor/nothing/phone1/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.2-service.rc \
     vendor/nothing/phone1/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/nothing/phone1/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
@@ -702,6 +704,22 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/nothing/phone1/proprietary/vendor/etc/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
     vendor/nothing/phone1/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    vendor/nothing/phone1/proprietary/vendor/etc/thermal.benchmark.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.benchmark.conf \
+    vendor/nothing/phone1/proprietary/vendor/etc/thermal.high.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.high.conf \
+    vendor/nothing/phone1/proprietary/vendor/etc/thermal.high.level1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.high.level1.conf \
+    vendor/nothing/phone1/proprietary/vendor/etc/thermal.high.level2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.high.level2.conf \
+    vendor/nothing/phone1/proprietary/vendor/etc/thermal.high.level3.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.high.level3.conf \
+    vendor/nothing/phone1/proprietary/vendor/etc/thermal.high.level4.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.high.level4.conf \
+    vendor/nothing/phone1/proprietary/vendor/etc/thermal.low.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.low.conf \
+    vendor/nothing/phone1/proprietary/vendor/etc/thermal.low.level1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.low.level1.conf \
+    vendor/nothing/phone1/proprietary/vendor/etc/thermal.low.level2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.low.level2.conf \
+    vendor/nothing/phone1/proprietary/vendor/etc/thermal.mid.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.mid.conf \
+    vendor/nothing/phone1/proprietary/vendor/etc/thermal.mid.level1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.mid.level1.conf \
+    vendor/nothing/phone1/proprietary/vendor/etc/thermal.mid.level2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.mid.level2.conf \
+    vendor/nothing/phone1/proprietary/vendor/etc/thermal.mid.level3.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.mid.level3.conf \
+    vendor/nothing/phone1/proprietary/vendor/etc/thermal.mid.level4.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.mid.level4.conf \
+    vendor/nothing/phone1/proprietary/vendor/etc/thermal.sgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.sgame.conf \
+    vendor/nothing/phone1/proprietary/vendor/etc/thermal.super.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.super.conf \
     vendor/nothing/phone1/proprietary/vendor/etc/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/video_system_specs.json \
     vendor/nothing/phone1/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/nothing/phone1/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
@@ -1595,6 +1613,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/lib64/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dsp@1.0.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fm@1.0.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@2.0.so \
+    vendor/nothing/phone1/proprietary/vendor/lib64/vendor.qti.hardware.limits@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.limits@1.0.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.mwqemadapter@1.0.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/vendor.qti.hardware.qconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qconfig@1.0.so \
@@ -1685,4 +1704,5 @@ PRODUCT_PACKAGES += \
     c2_manifest_vendor \
     manifest_android.hardware.drm@1.3-service.widevine \
     vendor.qti.gnss@4.0-service \
+    vendor.qti.hardware.limits@1.0-service \
     vendor.qti.hardware.servicetracker@1.2-service
