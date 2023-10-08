@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/nothing/phone1
 
 PRODUCT_COPY_FILES += \
+    vendor/nothing/phone1/proprietary/odm/etc/aac_richtap.config:$(TARGET_COPY_OUT_ODM)/etc/aac_richtap.config \
     vendor/nothing/phone1/proprietary/system/etc/permissions/advancedSample_camera_extensions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/advancedSample_camera_extensions.xml \
     vendor/nothing/phone1/proprietary/system/etc/permissions/se.dirac.acs.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/se.dirac.acs.xml \
     vendor/nothing/phone1/proprietary/system/etc/public.libraries.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries.txt \
@@ -204,7 +205,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.diaghal@1.0.so \
     vendor/nothing/phone1/proprietary/system_ext/lib64/vendor.qti.hardware.dpmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.dpmservice@1.0.so \
     vendor/nothing/phone1/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
-    vendor/nothing/phone1/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.1.so \
     vendor/nothing/phone1/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/nothing/phone1/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     vendor/nothing/phone1/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
@@ -236,6 +236,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.servicetracker@1.2-service \
     vendor/nothing/phone1/proprietary/vendor/bin/hw/vendor.qti.hardware.soter@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.soter@1.0-service \
     vendor/nothing/phone1/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
+    vendor/nothing/phone1/proprietary/vendor/bin/hw/vendor.qti.hardware.vibrator.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.vibrator.service \
     vendor/nothing/phone1/proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2@1.0-service \
     vendor/nothing/phone1/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/nothing/phone1/proprietary/vendor/bin/imsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdaemon \
@@ -410,6 +411,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc \
     vendor/nothing/phone1/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
     vendor/nothing/phone1/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
+    vendor/nothing/phone1/proprietary/vendor/etc/init/vendor.qti.hardware.vibrator.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.vibrator.service.rc \
     vendor/nothing/phone1/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/nothing/phone1/proprietary/vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal@1.0-service.rc \
     vendor/nothing/phone1/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
@@ -543,6 +545,68 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/etc/qdcm_calib_data_sw43404_amoled_video_mode_dsi_boe_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_sw43404_amoled_video_mode_dsi_boe_panel_with_DSC.xml \
     vendor/nothing/phone1/proprietary/vendor/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml \
     vendor/nothing/phone1/proprietary/vendor/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/NT_OnOff_button.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_OnOff_button.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/NT_camera_photo.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_camera_photo.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/NT_camera_zoom.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_camera_zoom.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/NT_charge.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_charge.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/NT_letters_navi.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_letters_navi.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/NT_unlock_error.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_unlock_error.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/NT_unlock_successful.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/NT_unlock_successful.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/alarm/bedside.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/bedside.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/alarm/coil.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/coil.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/alarm/frogs.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/frogs.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/alarm/incoming.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/incoming.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/alarm/kashio.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/kashio.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/alarm/munge.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/munge.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/alarm/nothing.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/nothing.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/alarm/prong.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/prong.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/alarm/ramble.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/ramble.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/alarm/transmission.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/alarm/transmission.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/common_notification1.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/common_notification1.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/common_notification2.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/common_notification2.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/common_ringtone1.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/common_ringtone1.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/common_ringtone2.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/common_ringtone2.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/beak.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/beak.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/bulb_one.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/bulb_one.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/bulb_two.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/bulb_two.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/cough.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/cough.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/fox.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/fox.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/gamma.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/gamma.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/gargle.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/gargle.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/guiro.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/guiro.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/isolator.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/isolator.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/nope.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/nope.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/oi!.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/oi!.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/pep.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/pep.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/simmer.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/simmer.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/skim.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/skim.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/squiggle.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/squiggle.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/volley.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/volley.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/why.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/why.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/woo.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/woo.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/yeh.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/yeh.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/notification/zip.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/notification/zip.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/abra.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/abra.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/beetle.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/beetle.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/bug.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/bug.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/burrow.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/burrow.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/coded.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/coded.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/flutter.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/flutter.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/forever.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/forever.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/karha.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/karha.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/latency.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/latency.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/molitor.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/molitor.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/pepelu.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/pepelu.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/pet.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/pet.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/plot.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/plot.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/pneumatic.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/pneumatic.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/radiate.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/radiate.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/scribble.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/scribble.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/snaps.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/snaps.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/squirrels.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/squirrels.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/tennis.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/tennis.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/woo_yeh.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/woo_yeh.he \
+    vendor/nothing/phone1/proprietary/vendor/etc/richtapresources/ringtone/wow!.he:$(TARGET_COPY_OUT_VENDOR)/etc/richtapresources/ringtone/wow!.he \
     vendor/nothing/phone1/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/nothing/phone1/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/nothing/phone1/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
@@ -1313,6 +1377,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/lib64/libVkLayer_q3dtools.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVkLayer_q3dtools.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/lib_lvacfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_lvacfs.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/liba2dpoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liba2dpoffload.so \
+    vendor/nothing/phone1/proprietary/vendor/lib64/libaacvibrator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaacvibrator.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libadaptlaunch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadaptlaunch.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libadreno_app_profiles.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_app_profiles.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_utils.so \
@@ -1497,6 +1562,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/lib64/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-util.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-utils.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so \
+    vendor/nothing/phone1/proprietary/vendor/lib64/libqtivibratoreffect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtivibratoreffect.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcc.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/librcmask.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcmask.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libremosaic_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_wrapper.so \
@@ -1572,6 +1638,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
+    vendor/nothing/phone1/proprietary/vendor/lib64/vendor.aac.hardware.richtap.vibrator-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.aac.hardware.richtap.vibrator-V1-ndk_platform.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.0.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.1.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.2.so \
@@ -1655,6 +1722,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.slmadapter@1.0.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/vendor.qti.hardware.soter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.soter@1.0.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
+    vendor/nothing/phone1/proprietary/vendor/lib64/vendor.qti.hardware.vibrator.impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vibrator.impl.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.1.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.2.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.3.so \
@@ -1707,4 +1775,5 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.3-service.widevine \
     vendor.qti.gnss@4.0-service \
     vendor.qti.hardware.limits@1.0-service \
-    vendor.qti.hardware.servicetracker@1.2-service
+    vendor.qti.hardware.servicetracker@1.2-service \
+    vendor.qti.hardware.vibrator.service
