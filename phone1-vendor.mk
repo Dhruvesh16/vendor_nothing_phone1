@@ -8,22 +8,9 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/odm/etc/aac_richtap.config:$(TARGET_COPY_OUT_ODM)/etc/aac_richtap.config \
     vendor/nothing/phone1/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
-    vendor/nothing/phone1/proprietary/system/etc/permissions/advancedSample_camera_extensions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/advancedSample_camera_extensions.xml \
     vendor/nothing/phone1/proprietary/system/etc/permissions/se.dirac.acs.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/se.dirac.acs.xml \
     vendor/nothing/phone1/proprietary/system/etc/public.libraries.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries.txt \
     vendor/nothing/phone1/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
-    vendor/nothing/phone1/proprietary/system/lib/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libarcsoft_beautyshot.so \
-    vendor/nothing/phone1/proprietary/system/lib/libarcsoft_hdr_detection.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libarcsoft_hdr_detection.so \
-    vendor/nothing/phone1/proprietary/system/lib/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libarcsoft_high_dynamic_range.so \
-    vendor/nothing/phone1/proprietary/system/lib/libarcsoft_low_light_hdr.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libarcsoft_low_light_hdr.so \
-    vendor/nothing/phone1/proprietary/system/lib/libarcsoft_singlecam_bokeh.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libarcsoft_singlecam_bokeh.so \
-    vendor/nothing/phone1/proprietary/system/lib/libmpbase.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmpbase.so \
-    vendor/nothing/phone1/proprietary/system/lib64/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libarcsoft_beautyshot.so \
-    vendor/nothing/phone1/proprietary/system/lib64/libarcsoft_hdr_detection.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libarcsoft_hdr_detection.so \
-    vendor/nothing/phone1/proprietary/system/lib64/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libarcsoft_high_dynamic_range.so \
-    vendor/nothing/phone1/proprietary/system/lib64/libarcsoft_low_light_hdr.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libarcsoft_low_light_hdr.so \
-    vendor/nothing/phone1/proprietary/system/lib64/libarcsoft_singlecam_bokeh.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libarcsoft_singlecam_bokeh.so \
-    vendor/nothing/phone1/proprietary/system/lib64/libmpbase.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmpbase.so \
     vendor/nothing/phone1/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/nothing/phone1/proprietary/system_ext/bin/tcmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/tcmd \
     vendor/nothing/phone1/proprietary/system_ext/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice \
@@ -133,6 +120,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/nothing/phone1/proprietary/system_ext/etc/init/tcmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/tcmd.rc \
     vendor/nothing/phone1/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
+    vendor/nothing/phone1/proprietary/system_ext/etc/permissions/advancedSample_camera_extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/advancedSample_camera_extensions.xml \
     vendor/nothing/phone1/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
     vendor/nothing/phone1/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/nothing/phone1/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
@@ -146,7 +134,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
     vendor/nothing/phone1/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
     vendor/nothing/phone1/proprietary/system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
-    vendor/nothing/phone1/proprietary/system_ext/lib/libcamxextension_algo.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libcamxextension_algo.so \
     vendor/nothing/phone1/proprietary/system_ext/lib/libencoderjpeg_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libencoderjpeg_jni.so \
     vendor/nothing/phone1/proprietary/system_ext/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmosal.so \
     vendor/nothing/phone1/proprietary/system_ext/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmparser_lite.so \
@@ -175,7 +162,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/system_ext/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvt.so \
     vendor/nothing/phone1/proprietary/system_ext/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtextutils.so \
     vendor/nothing/phone1/proprietary/system_ext/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtutils.so \
-    vendor/nothing/phone1/proprietary/system_ext/lib64/libcamxextension_algo.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcamxextension_algo.so \
     vendor/nothing/phone1/proprietary/system_ext/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdiag_system.so \
     vendor/nothing/phone1/proprietary/system_ext/lib64/libdpmctmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmctmgr.so \
     vendor/nothing/phone1/proprietary/system_ext/lib64/libdpmfdmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmfdmgr.so \
@@ -847,7 +833,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/nothing/phone1/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/nothing/phone1/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
-    vendor/nothing/phone1/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/nothing/phone1/proprietary/vendor/firmware/CAMERA_ICP_170.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_170.elf \
     vendor/nothing/phone1/proprietary/vendor/firmware/a660_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a660_gmu.bin \
     vendor/nothing/phone1/proprietary/vendor/firmware/a660_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a660_sqe.fw \
@@ -1052,7 +1037,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
     vendor/nothing/phone1/proprietary/vendor/lib/libbluetooth_audio_session_qti_2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti_2_1.so \
     vendor/nothing/phone1/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
-    vendor/nothing/phone1/proprietary/vendor/lib/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxexternalformatutils.so \
     vendor/nothing/phone1/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
     vendor/nothing/phone1/proprietary/vendor/lib/libcapiv2svarnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svarnn.so \
     vendor/nothing/phone1/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
@@ -1082,6 +1066,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/lib/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal.so \
     vendor/nothing/phone1/proprietary/vendor/lib/libmmrtpdecoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpdecoder_proprietary.so \
     vendor/nothing/phone1/proprietary/vendor/lib/libmmrtpencoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpencoder_proprietary.so \
+    vendor/nothing/phone1/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
     vendor/nothing/phone1/proprietary/vendor/lib/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmulawdec.so \
     vendor/nothing/phone1/proprietary/vendor/lib/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfconfig.so \
     vendor/nothing/phone1/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
@@ -1195,50 +1180,9 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.eeprom.abra_qtech_p24c64f_imx471_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.abra_qtech_p24c64f_imx471_eeprom.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.eeprom.abra_truly_p24c64f_imx471_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.abra_truly_p24c64f_imx471_eeprom.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.eeprom.gt24p128c2csli_imx766.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.gt24p128c2csli_imx766.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.eeprom.irs2381c_polar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.irs2381c_polar.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.eeprom.truly_cmb433.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.truly_cmb433.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.flash.lm3644.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.flash.lm3644.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.abra_qtech_imx471_front.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.abra_qtech_imx471_front.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.abra_qtech_imx766_wide.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.abra_qtech_imx766_wide.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.abra_qtech_s5kjn1_uw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.abra_qtech_s5kjn1_uw.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.imx318.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx318.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.imx334.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx334.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.imx362.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx362.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.imx376.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx376.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.imx386.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx386.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.imx476.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx476.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.imx481.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx481.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.imx519.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx519.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.imx563.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx563.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.imx576.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx576.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.imx577.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx577.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.imx586.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx586.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.imx766.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx766.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.max7366_6dof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.max7366_6dof.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.max7366_eyetrack.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.max7366_eyetrack.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.max7366_ov6211.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.max7366_ov6211.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.max7366_ov9282.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.max7366_ov9282.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.ov12a10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.ov12a10.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.ov12a10_front.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.ov12a10_front.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.ov13855.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.ov13855.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.ov13880.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.ov13880.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.ov6211_master.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.ov6211_master.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.ov6211_slave.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.ov6211_slave.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.ov7251.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.ov7251.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.ov8856.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.ov8856.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.ov8856_master.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.ov8856_master.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.ov8856_slave.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.ov8856_slave.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.ov9282_master.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.ov9282_master.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.ov9282_slave.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.ov9282_slave.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.s5k2l7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.s5k2l7.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.s5k2x5sp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.s5k2x5sp.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.s5k33dxx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.s5k33dxx.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.s5k3m5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.s5k3m5.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.s5k3p9.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.s5k3p9.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.s5k4h7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.s5k4h7.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.s5k5e9yu05.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.s5k5e9yu05.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.s5k5e9yx04.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.s5k5e9yx04.so \
-    vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensor.s5kjd1sp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.s5kjd1sp.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensormodule.abra_qtech_imx471_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.abra_qtech_imx471_front.bin \
     vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensormodule.abra_qtech_imx766_wide.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.abra_qtech_imx766_wide.bin \
     vendor/nothing/phone1/proprietary/vendor/lib64/camera/com.qti.sensormodule.abra_qtech_s5kjn1_uw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.abra_qtech_s5kjn1_uw.bin \
@@ -1423,6 +1367,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/lib64/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxQcelp13Dec.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxWmaDec.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
+    vendor/nothing/phone1/proprietary/vendor/lib64/libPlaneSegmentationWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPlaneSegmentationWrapper.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libQTEEConnector_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_listener.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_vendor.so \
@@ -1440,12 +1385,22 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/lib64/libaidenoiserv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaidenoiserv2.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libaoa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaoa.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libappclassifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libappclassifier.so \
+    vendor/nothing/phone1/proprietary/vendor/lib64/libarcsoft_aiscenedetection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_aiscenedetection.so \
+    vendor/nothing/phone1/proprietary/vendor/lib64/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_beautyshot.so \
+    vendor/nothing/phone1/proprietary/vendor/lib64/libarcsoft_dark_vision_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dark_vision_raw.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_image.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_video.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libarcsoft_hdr_detection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_hdr_detection.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_high_dynamic_range.so \
+    vendor/nothing/phone1/proprietary/vendor/lib64/libarcsoft_low_light_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_low_light_hdr.so \
+    vendor/nothing/phone1/proprietary/vendor/lib64/libarcsoft_mf_superresolution.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_mf_superresolution.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libarcsoft_night_video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_night_video.so \
+    vendor/nothing/phone1/proprietary/vendor/lib64/libarcsoft_portrait_distortion_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_portrait_distortion_correction.so \
+    vendor/nothing/phone1/proprietary/vendor/lib64/libarcsoft_portrait_super_night_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_portrait_super_night_raw.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libarcsoft_singlecam_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_singlecam_bokeh.so \
+    vendor/nothing/phone1/proprietary/vendor/lib64/libarcsoft_super_night_raw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_super_night_raw.so \
+    vendor/nothing/phone1/proprietary/vendor/lib64/libarcsoft_superportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_superportrait.so \
+    vendor/nothing/phone1/proprietary/vendor/lib64/libarcsoft_watermark.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_watermark.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libasn1cper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1cper.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libasn1crt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1crt.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libasn1crtx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1crtx.so \
@@ -1459,6 +1414,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libcamerapostproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamerapostproc.so \
+    vendor/nothing/phone1/proprietary/vendor/lib64/libcamxextension_night.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxextension_night.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxexternalformatutils.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libcamxfacialfeatures.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfacialfeatures.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libcamxfdalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgo.so \
@@ -1498,6 +1454,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
+    vendor/nothing/phone1/proprietary/vendor/lib64/libeepromcutter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeepromcutter.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libgameoptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgameoptfeature.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgdtap.so \
@@ -1562,6 +1519,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/phone1/proprietary/vendor/lib64/libmmcamera_pdpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_pdpc.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libmorpho_MotionSensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_MotionSensor.so \
+    vendor/nothing/phone1/proprietary/vendor/lib64/libmouth_mask_detection.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmouth_mask_detection.arcsoft.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libnanopb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnanopb.so \
     vendor/nothing/phone1/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
@@ -1875,9 +1833,9 @@ PRODUCT_PACKAGES += \
     IWlanService \
     IWlanService \
     TimeService \
-    PowerOffAlarm \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \
+    PowerOffAlarm \
     QtiTelephony \
     QtiTelephonyService \
     QtiTelephonyService \
@@ -1887,8 +1845,8 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     qcrilmsgtunnel \
     WfdCommon \
-    androidx.camera.extensions.impl.advanced \
     tcmclient \
+    androidx.camera.extensions.impl.advanced \
     audiosphere \
     com.android.hotwordenrollment.common.util \
     com.qti.dpmframework \
